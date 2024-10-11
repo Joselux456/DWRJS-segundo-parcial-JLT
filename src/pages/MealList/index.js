@@ -15,11 +15,7 @@ const MealList = () => {
     }, [letter]);
     return (
         <div>
-            <SearchBar
-                type="text"
-                value={letter}
-                onChange={(e) => setLetter(e.target.value)}
-            />
+            <input type="text" value={letter} onChange={(e) => setLetter(e.target.value)}></input>
             <MealPanel meal={meals}/>
         </div>
     );

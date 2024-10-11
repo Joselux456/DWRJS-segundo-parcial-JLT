@@ -1,11 +1,12 @@
 import React from "react";
 import {ReactComponent as Search} from "../../assets/search.svg";
+import SearchInput from "./searchInput.js"
 
-const SearchBar = () => {
+const SearchBar = ({Recipe}) => {
     return (
         <div>
             <Search />
-            <input type="text" placeholder="Search..."></input>
+            <SearchInput letter={Recipe.charAt()}/>
         </div>
     );
 };
