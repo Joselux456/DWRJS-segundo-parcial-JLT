@@ -3,6 +3,7 @@ import { FetchMealByFirstLetter} from "../../services/mealtService";
 import "./index.css"
 
 import SearchBar from "../../components/SearchBar";
+import MealPanel from "../../components/MealPanel";
 
 const MealList = () => {
     const [meals, setMeals] = useState([]);
@@ -19,14 +20,7 @@ const MealList = () => {
                 value={letter}
                 onChange={(e) => setLetter(e.target.value)}
             />
-            <ul className="meals">
-                {meals.map((meal) => (
-                   
-                    <span key={meal.idMeal}>
-                    <img src={meal.strMealThumb} alt={meal.strMeal}></img></span>
-                    
-                ))}
-            </ul>
+            <MealPanel meal={meals}/>
         </div>
     );
     
