@@ -1,9 +1,9 @@
 # Parcial Segundo Corte Desarrollo Web 🚀
 
 
-Nombre completo estudiante :
+Nombre completo estudiante : Jose Luis Tovar Mosquera
 
-Codigo :
+Codigo : 234059
 
 **Descripción del Problema:**
 
